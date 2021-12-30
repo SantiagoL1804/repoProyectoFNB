@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fenix no baja - Contacto</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="shortcut icon" href="../assets/fenix.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../assets/fenix.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../css1/all.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+  </head>
+  <body>
+    <nav class="navs" class="kenburns-bottom">
+      <img class="navs__imagen" src="../assets/fenix.png" alt="Imagen CAF " />
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul class="navs__vinculos">
+        <li><a class="navs__ancla" href="../index.html">Inicio</a></li>
+        <li>
+          <a href="../secciones/partidosEnVivo.html">Partidos en vivo</a>
+        </li>
+        <li>
+          <a href="../secciones/plantel.html"> Plantel</a>
+        </li>
+        <li>
+          <a href="../secciones/historiaYDatos.html">Historia</a>
+        </li>
+        <li>
+          <a href="../secciones/contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="grid-contacto">
+      <header class="contacto">
+        <legend class="contacto__legend">Información del usuario</legend>
+        <fieldset class="contacto__campo">
+          <form action="#" method="GET">
+            <div>
+              <label class="contacto__formul" for="Nombre">Nombre:</label>
+              <input type="text" placeholder="Escriba su nombre" />
+            </div>
+
+            <div class="contacto__formul">
+              <label for="Apellido">Apellido:</label>
+              <input type="text" placeholder="Escriba su apellido" />
+            </div>
+
+            <div class="contacto__formul">
+              <label for="Email">Email:</label>
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Escriba un email"
+              />
+            </div>
+
+            <div class="contacto__formul">
+              <label for="estado">Estado civil:</label>
+              <select name="user-estado" id="estado">
+                <option value="Soltero">Soltero/a</option>
+                <option value="Casado">Casado/a</option>
+                <option value="Divorciado">Divorciado/a</option>
+                <option value="Viudo">Viudo/a</option>
+              </select>
+            </div>
+
+            <div class="contacto__formul">
+              <label for="novedades">¿Desea recibir el Newsletter?</label>
+              <input
+                type="checkbox"
+                name="newsletter"
+                id="novedades"
+                value="1"
+              />
+            </div>
+            <div>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Deje un comentario"
+              ></textarea>
+            </div>
+            <input type="submit" value="ENVIAR" />
+            <input type="reset" value="LIMPIAR FORMULARIO" />
+          </form>
+        </fieldset>
+      </header>
+      <footer class="pie">
+        <a class="pie__icono1" href="https://www.facebook.com/CAFenixOficial">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="pie__icono2" href="https://www.instagram.com/cafenix/?hl=es"
+          ><i class="fab fa-instagram"></i>
+        </a>
+        <a class="pie__icono3" href="https://twitter.com/cafenix_?lang=es">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </footer>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
