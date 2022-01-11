@@ -24,33 +24,45 @@
     <link rel="shortcut icon" href="../assets/fenix.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="../css1/all.css" />
     <link rel="stylesheet" href="../css/estilos.css" />
+    <link href="../css2/hover.css" rel="stylesheet" media="all">
   </head>
-  <nav class="navs">
-    <img class="navs__imagen" src="../assets/fenix.png" alt="Imagen CAF " />
-    <input type="checkbox" id="check" />
-    <label for="check" class="checkbtn">
-      <i class="fas fa-bars"></i>
-    </label>
-    <ul class="navs__vinculos">
-      <li><a class="navs__ancla" href="../index.html">Inicio</a></li>
-      <li>
-        <a href="../secciones/partidosEnVivo.html">Partidos en vivo</a>
-      </li>
-      <li>
-        <a href="../secciones/plantel.html"> Plantel</a>
-      </li>
-      <li>
-        <a href="../secciones/historiaYDatos.html">Historia</a>
-      </li>
-      <li>
-        <a href="../secciones/contacto.html">Contacto</a>
-      </li>
-    </ul>
-  </nav>
-  <body>
-    <main class="historiaMedio">
-      <h2 class="historiaMedio__titulo">Historia del Club</h2>
-      <div class="historiaMedio__fondo">
+  <body class="historiaMedio">
+    
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" >
+      <div class="container-fluid">
+        <a href="../index.html"><img class="navs__imagen  hvr-pulse-grow" src="../assets/fenix.png" alt="logo" style="height: 5em;"></a>
+        <button class="navbar-toggler hvr-back-pulse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item mx-2">
+              <a class="nav-link hvr-bounce-in" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link hvr-bounce-in" href="../secciones/partidosEnVivo.html">Partidos en vivo</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link hvr-bounce-in" href="./plantel.html">Plantel</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link active hvr-bounce-in" href="#">Historia</a>
+              <li class="nav-item mx-2">
+                <a class="nav-link hvr-bounce-in" href="../secciones/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+ 
+    <main>
+      <h2 data-aos="fade-down" class="historiaMedio__titulo m-5 p-3">Historia del Club</h2>
+
+      <div data-aos="fade-up" class="container historiaMedio__fondo text-light p-3">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="m-3" style="font-weight: bolder;">Fundación y primeros años</h3>
         <p class="historiaMedio__texto1">
           En el barrio de Capurro de Montevideo, en 1909 surge el Guaraní,
           equipo que es disuelto en 1913. El 7 de julio de 1916 un grupo de
@@ -61,7 +73,11 @@
           singular éxito, hasta que se resuelve inscribir al club en la Liga
           uruguaya, alcanzando la Primera División en 1923, gracias al cisma del
           fútbol uruguayo. <br />
-          <br />
+        </div>
+       <div class="col-12 container">
+        <div class="row">
+         <div class="col-md-6">
+           <p>
           La historia de Fénix transcurrió en un permanente ascenso y descenso
           entre Primera y Segunda División, siendo de esta manera el equipo que
           más veces ha logrado el título de Segunda División. Récord compartido
@@ -70,9 +86,24 @@
           ascensos (8). El último ascenso se produjo en la temporada 2008/09. A
           esto se debe una frase nacida en el Campeonato Uruguayo de 1958 creada
           por el dibujante Héctor Mancini e instalada en la cultura popular del
-          uruguayo que dice: «¡el Féni no baja!», grito de guerra de los hinchas
-          albivioletas. <br />
-          <br />
+          uruguayo que dice: «¡el Féni no baja!», grito de guerra de los hinchas del Capurro.
+        </p>
+        </div>
+        <div class="col-md-6 ">
+          <picture class="historiaMedio__cuadroFoto ">
+            <img
+              class="historiaMedio__foto pt-md-5 mb-sm-2"
+              style="width: 100%;"
+              src="../assets/fenix-historia.jpg"
+              alt=""
+            />
+          </picture>
+         </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <h3 class="m-3" style="font-weight: bolder;">Decada del 2000</h3>
+        <p>
           En 2000 logró ascender a Primera después de 15 años en Segunda, con
           Miguel Ángel Puppo como técnico. El mejor momento de la historia del
           club llegó en el 2002, cuando de la mano de Juan Ramón Carrasco como
@@ -90,16 +121,35 @@
           del partido la afición de Fénix cantaba «borom bom bom borom bom bom
           este es el cuadro de Juan Ramón», al referirse al director técnico
           Juan Ramón Carrasco.
-          <br />
+     
         </p>
-        <p class="historiaMedio__texto2">
+      </div>
+      <div class="col-12 container ">
+        <div class="row">
+          <div class="col-md-6 ">
+          <picture class="historiaMedio__cuadroFoto ">
+            <img
+              class="historiaMedio__foto pt-md-5 mb-sm-2"
+              style="width: 100%; height: 70%;"
+              src="../assets/fenixvsvelez.jpg"
+              alt=""
+            />
+          </picture>
+         </div>
+        <div class="col-md-6">
+          <p class="historiaMedio__texto2">
           Al año siguiente (siendo el primer equipo «chico» en la historia en
           ganar dos liguillas consecutivas), volvió a participar de la Copa
           Libertadores, esta vez dirigido por Antonio Alzamendi, derrotando 2 a
           1 al Vélez Sársfield como local y con un recordado penal atajado al
           famoso portero José Luis Chilavert por parte del portero albivioleta
-          De León en el partido jugado en Buenos Aires. <br />
-          <br />
+          De León en el partido jugado en Buenos Aires. 
+        </p>
+      </div>
+     </div>
+      </div>
+      <h3 class="m-2" style="font-weight: bolder;">Decadas del 2010 y 2020 </h3>
+        <p>
           En la temporada 2010-11, dirigido por Rosario Martínez, logró la
           cuarta posición y clasificó a la Copa Sudamericana 2011, torneo en el
           cual tuvo el 'privilegio' de enfrentar en primera ronda al futuro
@@ -111,13 +161,8 @@
           Cerro Porteño, en el partido de ida ganó 1 a 0 y perdió de visitante 2
           a 0, con un gol en la hora la cual no le permitió clasificar. <br />
         </p>
-        <picture class="historiaMedio__cuadroFoto">
-          <img
-            class="historiaMedio__foto"
-            src="../assets/fenix-historia.jpg"
-            alt=""
-          />
-        </picture>
+      </div>
+      <div class="col-12">
         <p class="historiaMedio__texto3">
           En el Campeonato Uruguayo 2019 nuevamente de la mano de Juan Ramón
           Carrasco, en su segundo ciclo en el club, Fénix logra clasificarse a
@@ -142,7 +187,10 @@
           la vuelta.
         </p>
       </div>
+      </div>
     </main>
+   
+
     <div>
       <table class="historiaMedio__lista" border="2px" cellpadding="20px">
         <tr class="historiaMedio__listatitulo">
@@ -161,18 +209,31 @@
           <td>Data 3</td>
         </tr>
       </table>
+
     </div>
-    <footer class="pie">
-      <a class="pie__icono1" href="https://www.facebook.com/CAFenixOficial">
-        <i class="fab fa-facebook-f"></i>
+
+
+ 
+
+    <footer class="pt-5 text-white text-center position-relative" style="background-image:url(../assets/purple\ smoke.jpg); height: 20vh">
+      <div class="container">
+        <div class="position-absolute bottom-0 start-0 pt-5 pr-5 pb-5 ">
+      <div class="h1 text-light">
+          <a href="https://twitter.com/cafenix_?lang=es"><i class="bi bi-twitter text-light mx-1 hvr-bounce-in"></i></a>  
+          <a href="https://www.facebook.com/CAFenixOficial"><i class="bi bi-facebook text-light mx-1 hvr-bounce-in"></i></a> 
+          <a href="https://www.instagram.com/cafenix/?hl=es"><i class="bi bi-instagram text-light mx-1 hvr-bounce-in"></i></a>
+        </div>
+      </div>
+        <div class="pt-4 bottom-0 ">
+      <p style="font-size: 2vh;">Copyright &copy; 2022 Santiago Larrique</p>
+      </div>
+      <a href="" class="position-absolute bottom-0 end-0 p-5 hvr-bob">
+        <i class="bi bi-arrow-up-circle h1 text-light "></i>
       </a>
-      <a class="pie__icono2" href="https://www.instagram.com/cafenix/?hl=es"
-        ><i class="fab fa-instagram"></i>
-      </a>
-      <a class="pie__icono3" href="https://twitter.com/cafenix_?lang=es">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </footer>
+      
+      </div>
+      </footer>
+
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
