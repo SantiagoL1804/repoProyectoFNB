@@ -192,7 +192,7 @@ header.cabeza {
 }
 
 .medio__texto {
-  color: rgb(158, 88, 204);
+  color: rgb(255, 255, 255);
   /*font-size: 1px, 5em;
   height: 200px;*/
   padding: 0em;
@@ -571,21 +571,9 @@ iframe.partvivo__paginaVivo {
   grid-column: 1 / span 1;
   grid-row: 3 / span 1;
 }
-/*
-.plant__swipe {
-  margin: 10px;
-  width: 100%;
-  height: auto;
-  grid-column: 1 / span 3;
-  grid-row: 4 / span 1;
-}
-
-.plant__swipefoto {
-  width: 100%;
-}
 
 /* Historia del club */
-/*
+
 */
 .historiaMedio {
   background: linear-gradient(90deg, white, rgb(196, 176, 113));/*
@@ -982,7 +970,9 @@ iframe.partvivo__paginaVivo {
       background-position: center;
     }
   
-
+.plant__descripcion{
+  margin-top: 3vh;
+}
     
     }
 
