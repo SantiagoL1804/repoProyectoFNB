@@ -1,4 +1,35 @@
+@charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+/*Componentes y reset*/
+/*$tituloAnimado:{ color: #7431DD;
+background: linear-gradient(to right, #b531dd 20%, #ffffff 40%, #c4b173 60%, #b531dd 80%);
+background-size: 200% auto;
+text-decoration: bold;
+color: #000;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: shine 5s linear infinite; }*/
+body::before {
+  display: block;
+  content: "";
+  height: 60px; }
+
+/*
+body {
+  font-size: 85%;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  background-position: bottom;
+  min-height: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+*/
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -10,6 +41,153 @@
   background-size: cover;
   background-position: center; }
 
+/*Cabeza de index*/
+/*$tituloAnimado:{ color: #7431DD;
+background: linear-gradient(to right, #b531dd 20%, #ffffff 40%, #c4b173 60%, #b531dd 80%);
+background-size: 200% auto;
+text-decoration: bold;
+color: #000;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: shine 5s linear infinite; }*/
+.medio {
+  /*grid-area: main;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;*/
+  background: linear-gradient(210deg, white, #9e58cc); }
+  .medio__titulo {
+    /* border-width: 100%;*/
+    color: #9e58cc;
+    /* line-height: 1.5%;
+    margin: 2em;*/
+    font-size: 2em;
+    padding: 1em;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+  .medio__texto {
+    color: white;
+    /*font-size: 1px, 5em;
+    height: 200px;*/
+    padding: 0em;
+    margin-top: -30px;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+  .medio__frame {
+    margin: 0em;
+    padding: 5em;
+    width: 80%;
+    /*  height: 50em;*/
+    margin-left: auto;
+    margin-right: auto; }
+
+/*Medio de index*/
+/*$tituloAnimado:{ color: #7431DD;
+background: linear-gradient(to right, #b531dd 20%, #ffffff 40%, #c4b173 60%, #b531dd 80%);
+background-size: 200% auto;
+text-decoration: bold;
+color: #000;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: shine 5s linear infinite; }*/
+.nosotros {
+  /* grid-area: section;
+     display: flex;
+     flex-direction: column;*/
+  background: black;
+  background-image: url(../../assets/fenix\baldoza.jpg);
+  background-clip: padding-box;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 200%;
+  background-position: center;
+  /* margin-top: 0;
+     margin-bottom: 0;*/
+  /*
+   &__intro {
+     color: white;
+     font-size: 1px, 5em;
+     height: 200px;
+     padding: 0em;
+     margin-bottom: -100px;
+     margin-left: 1em;
+     margin-right: 1em;
+   }
+   
+   &__perfiles {
+     display: flex;
+     flex-direction: row;
+   }
+   .nosotros__sant {
+     display: flex;
+     flex-direction: row;
+   }
+   
+   &__fotoSant {
+     margin: 1em;
+     object-fit: cover;
+     max-width: 15rem;
+     max-height: 15rem;
+     min-width: 15rem;
+     min-height: 15rem;
+     border-radius: 50%;
+   }
+   
+   &__textoSant {
+     color: white;
+     font-size: 1px, 5em;
+     height: 200px;
+     padding: 0em;
+     margin: 1em;
+     align-self: center;
+   }
+   
+   */ }
+  .nosotros__titulo {
+    background-image: url(https://media.giphy.com/media/jnVtE5ZBQlL7Z0z7iA/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-align: left;
+    /*  margin: 1em 5em 2em 0em;
+     font-size: 2em;*/ }
+
+/*Nosotros de index*/
+/*$tituloAnimado:{ color: #7431DD;
+background: linear-gradient(to right, #b531dd 20%, #ffffff 40%, #c4b173 60%, #b531dd 80%);
+background-size: 200% auto;
+text-decoration: bold;
+color: #000;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: shine 5s linear infinite; }*/
 header.cabeza {
   grid-area: header / header / header / header;
   width: 100%;
@@ -42,6 +220,17 @@ header.cabeza {
     font-family: Helvetica;
     text-shadow: 0 1px 0 #696969, 0 2px 0 #696969, 0 3px 0 #696969, 0 4px 0 #696969, 0 5px 0 #696969, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
 
+/*Sección plantel*/
+/*$tituloAnimado:{ color: #7431DD;
+background: linear-gradient(to right, #b531dd 20%, #ffffff 40%, #c4b173 60%, #b531dd 80%);
+background-size: 200% auto;
+text-decoration: bold;
+color: #000;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: shine 5s linear infinite; }*/
 .plant {
   /*width: 100%;
     padding: 5em 3em 3em 3em;
@@ -102,10 +291,7 @@ header.cabeza {
     /*
       padding: 3em 0em 0em 0em;
       text-decoration: none;
-      */
-    justify-self: center;
-    /*
-      /*grid-column: 1 / span 1;
+      grid-column: 1 / span 1;
       grid-row: 1 / span 1;*/ }
 
 @keyframes shine {
@@ -139,6 +325,17 @@ header.cabeza {
     /*grid-column: 1 / span 1;
     grid-row: 3 / span 1;*/ }
 
+/*Media queries de toda la página*/
+/*$tituloAnimado:{ color: #7431DD;
+background: linear-gradient(to right, #b531dd 20%, #ffffff 40%, #c4b173 60%, #b531dd 80%);
+background-size: 200% auto;
+text-decoration: bold;
+color: #000;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: shine 5s linear infinite; }*/
 @media screen and (max-width: 768px) {
   /*
     body,
