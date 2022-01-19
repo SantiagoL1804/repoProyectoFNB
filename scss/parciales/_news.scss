@@ -1,0 +1,13 @@
+@import "./variables";
+
+.news {
+   /* grid-area: news;
+    display: flex;
+    flex-direction: column;*/
+  
+  &__titulo {
+    color: rgb(196, 176, 113);
+    text-align: left;
+    margin: 1em;
+  }
+}
