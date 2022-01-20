@@ -1,0 +1,66 @@
+@import "./variables";
+
+.contacto {
+  background-image: url(../assets/festejo.png);
+  background-clip: padding-box;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: top;
+
+  .kenburns-bottom {
+    -webkit-animation: kenburns-bottom 5s ease-in-out both;
+    animation: kenburns-bottom 5s ease-in-out both;
+  }
+
+  @-webkit-keyframes kenburns-bottom {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 84%;
+      transform-origin: 50% 84%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(15px);
+      transform: scale(1.25) translateY(15px);
+      -webkit-transform-origin: bottom;
+      transform-origin: bottom;
+    }
+  }
+  @keyframes kenburns-bottom {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 84%;
+      transform-origin: 50% 84%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(15px);
+      transform: scale(1.25) translateY(15px);
+      -webkit-transform-origin: bottom;
+      transform-origin: bottom;
+    }
+  }
+  /*
+&.contacto {
+   grid-area: header;
+   margin-top: 10em;
+   margin-left: 2em;
+   margin-right: 2em;
+ }
+ */
+  &__legend {
+    color: rgb(159, 33, 184);
+    font-size: 2.5em;
+    text-decoration: none;
+  }
+
+  &__formul {
+    color: rgb(195, 103, 231);
+    font-size: initial;
+    text-decoration: none;
+    margin: 1em;
+    font-size: 1.5em;
+    height: 1em;
+  }
+}

@@ -1,0 +1,43 @@
+@import "./variables";
+
+.historiaMedio {
+  background: linear-gradient(
+    90deg,
+    white,
+    rgb(196, 176, 113)
+  ); /*
+  width: 100%;
+  height: 150vh; 
+  padding: 5em 3em 3em 3em;*/
+
+  &__titulo {
+    @include titulo-animado;
+    margin: 3em 0em;
+  }
+
+  &__fondo {
+    background: rgb(138, 70, 151);
+    /*background-size: 100%;*/
+    border-radius: 5%;
+  }
+
+  &__subtitulo1 {
+    @extend %historia-subtitulos;
+  }
+
+  &__subtitulo2 {
+    @extend %historia-subtitulos;
+  }
+
+  /*&__cuadroFoto {
+    margin: 1em;
+  }*/
+
+  &__foto {
+    width: inherit;
+  }
+
+  &__subtitulo3 {
+    @extend %historia-subtitulos;
+  }
+}
