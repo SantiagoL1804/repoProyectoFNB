@@ -1,7 +1,23 @@
-$dorado-fenix: #c4b071;
+/*Variables*/
 
-@mixin titulo-cabeza {
-  color: $dorado-fenix;
+$colores-pagina: (
+  "dorado-fenix": #c4b071,
+  "violeta-fenix": #823a9c,
+  "blanco-fenix": white,
+);
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+@mixin tituloCabeza {
+  color: map-get($colores-pagina, dorado-fenix);
   text-align: center;
   font-weight: bold;
   font-family: Helvetica;
@@ -19,7 +35,7 @@ $dorado-fenix: #c4b071;
     to right,
     #b531dd 20%,
     #ffffff 40%,
-    #c4b173 60%,
+    #c4b071 60%,
     #b531dd 80%
   );
   background-size: 200% auto;
@@ -35,7 +51,7 @@ $dorado-fenix: #c4b071;
 }
 
 %historia-subtitulos {
-  color: $dorado-fenix;
+  color: map-get($colores-pagina, dorado-fenix);
   font-size: 3vh;
   margin: 2em;
 }

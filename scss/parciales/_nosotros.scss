@@ -1,9 +1,7 @@
 @import "./variables";
+@import "./responsive-mixins";
 
 .nosotros {
-  /* grid-area: section;
-     display: flex;
-     flex-direction: column;*/
   background: black;
   background-image: url(../assets/fenixbaldoza.jpg);
   background-clip: padding-box;
@@ -20,48 +18,18 @@
     color: transparent;
     -moz-background-clip: text;
     -webkit-background-clip: text;
-    text-align: left;
-    /*  margin: 1em 5em 2em 0em;
-     font-size: 2em;*/
+    text-align: center;
+    /*  margin: 1em 5em 2em 0em;*/
+    font-size: 9vh;
+    @include movilL {
+      font-size: 6vh;
+    }
   }
-  /*
-   &__intro {
-     color: white;
-     font-size: 1px, 5em;
-     height: 200px;
-     padding: 0em;
-     margin-bottom: -100px;
-     margin-left: 1em;
-     margin-right: 1em;
-   }
-   
-   &__perfiles {
-     display: flex;
-     flex-direction: row;
-   }
-   .nosotros__sant {
-     display: flex;
-     flex-direction: row;
-   }
-   
-   &__fotoSant {
-     margin: 1em;
-     object-fit: cover;
-     max-width: 15rem;
-     max-height: 15rem;
-     min-width: 15rem;
-     min-height: 15rem;
-     border-radius: 50%;
-   }
-   
-   &__textoSant {
-     color: white;
-     font-size: 1px, 5em;
-     height: 200px;
-     padding: 0em;
-     margin: 1em;
-     align-self: center;
-   }
-   
-   */
+
+  &__texto {
+    font-size: 3vh;
+    @include movilL {
+      font-size: 1.5vh;
+    }
+  }
 }

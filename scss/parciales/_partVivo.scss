@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./responsive-mixins";
 
 .partVivo {
   background-image: url(../assets/fenixconcreto.jpg);
@@ -49,18 +50,6 @@
     }
   }
 
-  /*
-  &__cabeza {
-    display: grid;
-    grid-template-rows: auto 5em 1fr;
-    grid-template-columns: 42% 41%;
-    grid-template-areas:
-      "h2 . "
-      "p p"
-      "iframe iframe"
-      "footer footer";
-  }
-  */
   &__titulo {
     @include titulo-animado;
     /*grid-area: h2;
@@ -81,13 +70,12 @@
   }
 
   &__texto {
-    /*grid-area: p;*/
     color: white;
     font-size: 4vh;
     height: 1em;
+    text-align: center;
     /*padding: 0em;
-    margin: 2em;
-    text-align: left;*/
+    margin: 2em;*/
   }
 
   &__paginaVivo {

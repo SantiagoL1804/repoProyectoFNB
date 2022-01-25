@@ -3,14 +3,23 @@
 /*Componentes y reset*/
 @import "./parciales/componentes";
 
+/*Navbar*/
+@import "./parciales/navbar";
+
 /*Cabeza de index*/
-@import "./parciales/medio";
+@import "./parciales/cabeza";
 
 /*Medio de index*/
-@import "./parciales/nosotros";
+@import "./parciales/medio";
+
+/*Noticias de index*/
+@import "./parciales/news";
 
 /*Nosotros de index*/
-@import "./parciales/cabeza";
+@import "./parciales/nosotros";
+
+/*Footer de index*/
+@import "./parciales/footer";
 
 /*Sección plantel*/
 @import "./parciales/plantel";
@@ -25,4 +34,7 @@
 @import "./parciales/contacto";
 
 /*Media queries de toda la página*/
-@import "./parciales/quieries";
+@import "./parciales/responsive-mixins";
+
+/*Variables*/
+@import "./parciales/variables";

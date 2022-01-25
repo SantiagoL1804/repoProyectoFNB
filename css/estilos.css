@@ -311,8 +311,7 @@ news.news {
   margin: 1em;
 }
 /*
-footer.pie {
-  grid-area: footer;
+.pie {
   background: rgb(159, 33, 184);
   background-size: 100%;
   display: flex;

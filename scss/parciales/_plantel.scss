@@ -1,67 +1,22 @@
 @import "./variables";
+@import "./responsive-mixins";
 
 .plant {
-  /*width: 100%;
-    padding: 5em 3em 3em 3em;
-    height: 240vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr 0.2fr 1.5fr;*/
   background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgb(196, 176, 113) 45%,
-    rgba(164, 46, 212, 1) 80%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    #ffffff 0%,
-    rgb(196, 176, 113) 45%,
-    #a42ed4 80%
-  );
-  background: linear-gradient(
-    90deg,
-    #ffffff 0%,
-    #c4b173 45%,
-    rgba(164, 46, 212, 1) 80%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#a42ed4",GradientType=1);
-  /* background-size: 100%;*/
 
+  &__divider-cc {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    background: linear-gradient(to right bottom, #823a9c 49%, #fff 50%),
+      linear-gradient(-50deg, #ffffff 16px, #000 0);
+  }
+  &__fondo1 {
+    background-color: map-get($colores-pagina, blanco-fenix);
+  }
   &__titulo {
     @include titulo-animado;
-    text-align: center;
-    /*grid-column: 1 / span 1;
-    grid-row: 1 / span 1;*/
-  }
-  @keyframes shine {
-    to {
-      background-position: 200% center;
-    }
-  }
-
-  &__subtitulo {
-    color: #7431dd;
-    background: linear-gradient(
-      to right,
-      #b531dd 20%,
-      #ffffff 40%,
-      #c4b173 60%,
-      #b531dd 80%
-    );
-    background-size: 200% auto;
-    text-decoration: bold;
-    color: #000;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 5s linear infinite;
-
-    font-size: 10vh; /*
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 1;*/
   }
   @keyframes shine {
     to {
@@ -89,6 +44,27 @@
     width: 80%;
   }
 
+  &__divider--c {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    background: linear-gradient(to left bottom, #fff 49%, #823a9c 50%);
+  }
+  &__fondo2 {
+    background-color: map-get($colores-pagina, violeta-fenix);
+  }
+
+  &__subtitulo {
+    @include titulo-animado;
+  }
+
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+
   .img-hover-zoom {
     height: 300px;
     overflow: hidden;
@@ -103,7 +79,7 @@
   }
 
   &__subtitulo {
-    color: $dorado-fenix;
+    color: #c4b071;
     font-size: 2em;
     text-decoration: none;
     text-align: justify;

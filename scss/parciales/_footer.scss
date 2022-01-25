@@ -1,0 +1,8 @@
+@import "./variables";
+@import "./responsive-mixins";
+
+.footer {
+  &__copyright {
+    margin: 0;
+  }
+}

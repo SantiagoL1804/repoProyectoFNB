@@ -1,28 +1,87 @@
 @import "./variables";
+@import "./responsive-mixins";
 
-header.cabeza {
-  grid-area: header / header / header / header;
+.cabeza {
   width: 100%;
-  height: 89vh;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: stretch;
-  justify-content: space-evenly;
-  margin-top: 7em;
-  margin-bottom: 0;
-  background-image: url(../../assets/fire-flames.gif);
+  height: 45vw;
+  margin: 0;
+  background-image: url(../../assets/festejo3.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: 100%;
-  background-position: center top;
+  animation-name: background;
+  animation-delay: 3s;
+  animation-duration: 15s;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.81, 0.01, 0.26, 0.99);
+  animation-iteration-count: infinite;
+
+  @include laptop1024 {
+    height: 60vw;
+    background-size: 125%;
+  }
+
+  @include tablet {
+    height: 80vw;
+    background-size: 165%;
+  }
+
+  @include movilL {
+    height: 100vw;
+    background-size: 205%;
+  }
+
+  @include movilM {
+    height: 100vw;
+    background-size: 210%;
+  }
+
+  @include movilS {
+    height: 120vw;
+    background-size: 245%;
+  }
 
   &__titulo {
-    @include titulo-cabeza;
+    @include tituloCabeza;
+    margin-top: 2vh;
+    padding: 8vh 0 4vh 0;
   }
 
   &__subtitulo {
-    @include titulo-cabeza;
-    margin: 10px;
+    @extend .cabeza__titulo;
+    padding: 4vh 0 4vh 0;
     font-size: 4vw;
+  }
+
+  &__boton {
+    background-color: map-get($colores-pagina, dorado-fenix);
+    color: map-get($colores-pagina, violeta-fenix);
+    &:hover {
+      background-color: map-get($colores-pagina, violeta-fenix);
+      color: map-get($colores-pagina, blanco-fenix);
+    }
+  }
+}
+
+@keyframes background {
+  0% {
+    background-image: url("../../assets/festejo3.png");
+  }
+  20% {
+    background-image: url("../../assets/amaral.jpeg");
+  }
+  40% {
+    background-image: url("../../assets/amaral.jpeg");
+  }
+  60% {
+    background-image: url("../../assets/pallas3.png");
+  }
+  80% {
+    background-image: url("../../assets/pallas3.png");
+  }
+  90% {
+    background-image: url("../../assets/festejo3.png");
+  }
+  100% {
+    background-image: url("../../assets/festejo3.png");
   }
 }

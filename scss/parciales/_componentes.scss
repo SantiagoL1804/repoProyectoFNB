@@ -1,6 +1,7 @@
 @import "./variables";
+@import "./responsive-mixins";
 
-body::before{
+body::before {
   display: block;
   content: "";
   height: 60px;
@@ -20,13 +21,13 @@ body {
 }
 */
 * {
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

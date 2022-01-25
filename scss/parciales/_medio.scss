@@ -1,64 +1,111 @@
 @import "./variables";
+@import "./responsive-mixins";
 
 .medio {
-    /*grid-area: main;
+  /*grid-area: main;
     padding: 2em;
     display: flex;
     flex-direction: column;*/
-    background: linear-gradient(210deg, white, rgb(158, 88, 204));
-  
+  background: linear-gradient(210deg, white, rgb(158, 88, 204));
+
+  @include movilL {
+    background: linear-gradient(180deg, rgb(158, 88, 204), white);
+  }
+
   &__titulo {
-   /* border-width: 100%;*/
-    color: rgb(158, 88, 204);
-   /* line-height: 1.5%;
-    margin: 2em;*/
-    font-size: 2em;
-    padding: 1em;
-    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-      animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    /* border-width: 100%;*/
+    @include titulo-animado;
+    font-weight: weight(bold);
+    font-size: 5.5vh;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    /*Media queries titulo medio*/
+    @include laptop1024 {
+      font-size: 4vh;
+      margin-top: 0;
+    }
+
+    @include tablet {
+      font-size: 3.5vh;
+      margin-top: 0;
+    }
+
+    @include movilL {
+      font-size: 3vh;
+      margin-bottom: 1em;
+    }
+
+    @include movilM {
+      font-size: 2.5vh;
+      margin-bottom: 1em;
+    }
+
+    @include movilS {
+      font-size: 2vh;
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
   }
-  
-  @-webkit-keyframes text-focus-in {
-    0% {
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
-  }
-  @keyframes text-focus-in {
-    0% {
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
-  }
-  
+
   &__texto {
     color: rgb(255, 255, 255);
-    /*font-size: 1px, 5em;
-    height: 200px;*/
+    font-weight: weight(regular);
     padding: 0em;
+    font-size: 3vh;
     margin-top: -30px;
-    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-      animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+      both;
+    animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+
+    /*Media queries titulo texto*/
+    @include laptop1024 {
+      font-size: 1.8vh;
+    }
+
+    @include tablet {
+      font-size: 2vh;
+    }
+
+    @include movilL {
+      text-align: center;
+    }
+
+    @include movilM {
+      font-size: 1.5vh;
+    }
+
+    @include movilS {
+      font-size: 1.5vh;
+    }
   }
-  
+
   &__frame {
-    margin: 0em;
     padding: 5em;
-    width: 80%;
-  /*  height: 50em;*/
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
+    height: 50vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+
+    /*Media queries frame*/
+    @include laptop1024 {
+      height: 35vh;
+    }
+
+    @include tablet {
+      height: 30vh;
+    }
+
+    @include movilL {
+      height: 20vh;
+    }
+
+    @include movilM {
+      height: 20vh;
+    }
+
+    @include movilS {
+      height: 20vh;
+    }
   }
- }
+}
