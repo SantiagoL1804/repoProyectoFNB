@@ -48,6 +48,23 @@ $font-weights: (
   animation: shine 5s linear infinite;
   font-size: 10vh;
   text-align: center;
+
+  /*Media queries titulo animado*/
+  @include tablet {
+    font-size: 8.5vh;
+  }
+
+  @include movilL {
+    font-size: 6.5vh;
+  }
+
+  @include movilM {
+    font-size: 5.5vh;
+  }
+
+  @include movilS {
+    font-size: 5vh;
+  }
 }
 
 %historia-subtitulos {

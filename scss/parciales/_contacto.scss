@@ -1,13 +1,34 @@
 @import "./variables";
 @import "./responsive-mixins";
+@import "./partVivo";
 
 .contacto {
-  background-image: url(../assets/festejo.png);
+  background-image: url(../../assets/festejo2.png);
   background-clip: padding-box;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
-  background-position: top;
+  background-position: bottom;
+
+  @include laptop1024 {
+    background-size: 155%;
+    background-position: center;
+  }
+  @include tablet {
+    background-size: 205%;
+  }
+
+  @include movilL {
+    background-size: 300%;
+  }
+
+  @include movilM {
+    background-size: 400%;
+  }
+
+  @include movilS {
+    background-size: 440%;
+  }
 
   .kenburns-bottom {
     -webkit-animation: kenburns-bottom 5s ease-in-out both;
@@ -42,14 +63,6 @@
       transform-origin: bottom;
     }
   }
-  /*
-&.contacto {
-   grid-area: header;
-   margin-top: 10em;
-   margin-left: 2em;
-   margin-right: 2em;
- }
- */
 
   &__titulo {
     @include titulo-animado;
@@ -61,17 +74,7 @@
   }
 
   &__legend {
-    color: rgb(159, 33, 184);
-    font-size: 2.5em;
-    text-decoration: none;
-  }
-
-  &__formul {
-    color: rgb(195, 103, 231);
-    font-size: initial;
-    text-decoration: none;
-    margin: 1em;
-    font-size: 1.5em;
-    height: 1em;
+    @extend .partVivo__texto;
+    color: map-get($colores-pagina, violeta-fenix);
   }
 }

@@ -33,18 +33,18 @@
 
     @include movilL {
       font-size: 3vh;
-      margin-bottom: 1em;
+      margin-bottom: 1.5em;
     }
 
     @include movilM {
       font-size: 2.5vh;
-      margin-bottom: 1em;
+      margin-bottom: 1.5em;
     }
 
     @include movilS {
-      font-size: 2vh;
+      font-size: 2.2vh;
       margin-top: 0;
-      margin-bottom: 1em;
+      margin-bottom: 1.5em;
     }
   }
 
@@ -52,7 +52,7 @@
     color: rgb(255, 255, 255);
     font-weight: weight(regular);
     padding: 0em;
-    font-size: 3vh;
+    font-size: 2.2vh;
     margin-top: -30px;
     -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53)
       both;
@@ -81,7 +81,7 @@
   }
 
   &__frame {
-    padding: 5em;
+    padding: 10em 5em 5em 5em;
     width: 90%;
     height: 50vh;
     margin-left: 2vh;

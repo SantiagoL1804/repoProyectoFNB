@@ -2,14 +2,7 @@
 @import "./responsive-mixins";
 
 .historiaMedio {
-  background: linear-gradient(
-    90deg,
-    white,
-    rgb(196, 176, 113)
-  ); /*
-  width: 100%;
-  height: 150vh; 
-  padding: 5em 3em 3em 3em;*/
+  background: linear-gradient(90deg, white, rgb(196, 176, 113));
 
   &__titulo {
     @include titulo-animado;
@@ -17,9 +10,21 @@
   }
 
   &__fondo {
-    background: rgb(138, 70, 151);
-    /*background-size: 100%;*/
-    border-radius: 5%;
+    background: map-get($colores-pagina, violeta-fenix);
+    background-size: 100%;
+    border-radius: 3%;
+
+    @include laptop1024 {
+      border-radius: 2%;
+    }
+
+    @include tablet {
+      border-radius: 4%;
+    }
+
+    @include movilL {
+      border-radius: 6%;
+    }
   }
 
   &__subtitulo1 {
@@ -36,9 +41,15 @@
 
   &__foto {
     width: inherit;
+    height: auto;
   }
 
   &__subtitulo3 {
     @extend %historia-subtitulos;
+  }
+
+  &__tituloDatos {
+    color: map-get($colores-pagina, violeta-fenix);
+    text-align: center;
   }
 }

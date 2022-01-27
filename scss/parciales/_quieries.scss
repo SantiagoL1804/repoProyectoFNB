@@ -1,4 +1,4 @@
-@import "./variables";
+/*@import "./variables";
 
 @media screen and (max-width: 768px) {
   /*
@@ -144,7 +144,7 @@
       margin: 2em;
       text-align: left;
     }
-    */
+    
   iframe.partvivo__paginaVivo {
     width: 100%;
     height: 40em;
@@ -157,7 +157,7 @@
       padding: 2em 0.5em 0.5em 0.5em;
       height: 210vh;
     }
-  */
+  
   .plant__titulo {
     font-size: 9vh;
   }
@@ -179,26 +179,26 @@
     }
   
  */
-  .plant__subtitulo {
-    font-size: 6vh;
-  }
+.plant__subtitulo {
+  font-size: 6vh;
+}
 
-  .grid-contacto {
-    background-image: url(../assets/festejo.png);
-    background-clip: padding-box;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 150vh 100vh;
-    background-position: center;
-  }
-  /*
+.grid-contacto {
+  background-image: url(../assets/festejo.png);
+  background-clip: padding-box;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 150vh 100vh;
+  background-position: center;
+}
+/*
     .contacto__formul {
       margin: 2em;
       font-size: 1.5em;
       height: 1em;
-      width: -1em;*/
+      width: -1em;
 }
-
+*/
 @media screen and (max-width: 425px) {
   .partVivo {
     background-clip: padding-box;
