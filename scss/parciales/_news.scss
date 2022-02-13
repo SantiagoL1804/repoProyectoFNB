@@ -1,0 +1,79 @@
+@import "./variables";
+@import "./responsive-mixins";
+
+.news {
+  &__titulo {
+    color: map-get($colores-pagina, dorado-fenix);
+    text-align: left;
+    margin: 1em;
+  }
+
+  &__carroNoticias {
+    &:hover {
+      color: map-get($colores-pagina, violeta-fenix);
+    }
+  }
+  &__carroTit {
+    font-size: 3vh;
+
+    /*Media queries carrusel titulo*/
+    @include laptop1024 {
+      font-size: 2vh;
+    }
+
+    @include tablet {
+      font-size: 4vh;
+    }
+
+    @include movilL {
+      font-size: 2.5vh;
+    }
+
+    @include movilM {
+      font-size: 2.3vh;
+    }
+
+    @include movilS {
+      font-size: 2vh;
+    }
+  }
+
+  &__carroTex {
+    text-decoration: none;
+    font-size: 2vh;
+
+    /*Media queries carrusel texto*/
+    @include laptop1024 {
+      font-size: 1.5vh;
+    }
+
+    @include tablet {
+      font-size: 2.5vh;
+    }
+
+    @include movilL {
+      font-size: 1.5vh;
+    }
+
+    @include movilM {
+      font-size: 1.2vh;
+    }
+
+    @include movilS {
+      font-size: 1.1vh;
+    }
+  }
+
+  &__boton {
+    justify-items: right;
+    color: map-get($colores-pagina, violeta-fenix);
+    &:hover {
+      background-color: map-get($colores-pagina, violeta-fenix);
+      color: map-get($colores-pagina, blanco-fenix);
+    }
+    @include movilL {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

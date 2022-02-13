@@ -1,0 +1,101 @@
+@import "./variables";
+@import "./responsive-mixins";
+@import "./partVivo";
+
+.contacto {
+  background-image: url(../../assets/festejo2.png);
+  background-clip: padding-box;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: bottom;
+
+  @include laptop1024 {
+    background-size: 155%;
+    background-position: center;
+  }
+  @include tablet {
+    background-size: 205%;
+  }
+
+  @include movilL {
+    background-image: url(../../assets/capi.png);
+    background-size: 150%;
+    background-position: bottom;
+  }
+
+  @include movilM {
+    background-size: 170%;
+  }
+
+  @include movilS {
+    background-size: 195%;
+  }
+
+  .kenburns-bottom {
+    -webkit-animation: kenburns-bottom 5s ease-in-out both;
+    animation: kenburns-bottom 5s ease-in-out both;
+  }
+
+  @-webkit-keyframes kenburns-bottom {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 84%;
+      transform-origin: 50% 84%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(15px);
+      transform: scale(1.25) translateY(15px);
+      -webkit-transform-origin: bottom;
+      transform-origin: bottom;
+    }
+  }
+  @keyframes kenburns-bottom {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 84%;
+      transform-origin: 50% 84%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(15px);
+      transform: scale(1.25) translateY(15px);
+      -webkit-transform-origin: bottom;
+      transform-origin: bottom;
+    }
+  }
+  &__campo {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+      width: 90%;
+    }
+
+    @include movilL {
+      width: auto;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &__titulo {
+    @include titulo-animado;
+  }
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  &__legend {
+    @extend .partVivo__texto;
+    color: map-get($colores-pagina, violeta-fenix);
+
+    @include movilL {
+      color: map-get($colores-pagina, blanco-fenix);
+    }
+  }
+}

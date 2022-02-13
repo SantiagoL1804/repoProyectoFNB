@@ -1,0 +1,93 @@
+@import "./variables";
+@import "./responsive-mixins";
+
+.partVivo {
+  background-image: url(../assets/fenixconcreto.jpg);
+  background-clip: padding-box;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: bottom;
+  height: auto;
+
+  @include laptop1024 {
+    background-size: 120%;
+  }
+  @include tablet {
+    background-size: 160%;
+  }
+
+  @include movilL {
+    background-size: 300%;
+  }
+
+  @include movilM {
+    background-size: 330%;
+  }
+
+  @include movilS {
+    background-size: 380%;
+  }
+
+  &__titulo {
+    @include titulo-animado;
+  }
+
+  &__texto {
+    color: white;
+    font-size: 4vh;
+    text-align: center;
+
+    @include laptop1024 {
+      font-size: 3vh;
+    }
+
+    @include tablet {
+      font-size: 2.7vh;
+    }
+
+    @include movilL {
+      font-size: 2.5vh;
+    }
+
+    @include movilM {
+      font-size: 2.2vh;
+    }
+
+    @include movilS {
+      font-size: 2vh;
+    }
+  }
+
+  &__paginaVivo {
+    padding: 1em;
+    width: 100%;
+    height: 100vh;
+    border-radius: 5px;
+    border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+    @include laptop1024 {
+      height: 75vh;
+    }
+
+    @include tablet {
+      height: 75vh;
+    }
+
+    @include movilL {
+      height: 60vh;
+    }
+
+    @include movilM {
+      height: 55vh;
+    }
+
+    @include movilS {
+      height: 50vh;
+    }
+  }
+}

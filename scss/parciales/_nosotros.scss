@@ -1,0 +1,67 @@
+@import "./variables";
+@import "./responsive-mixins";
+
+.nosotros {
+  background: black;
+  background-image: url(../assets/fenixbaldoza.jpg);
+  background-clip: padding-box;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 200%;
+  background-position: center;
+  /* margin-top: 0;
+     margin-bottom: 0;*/
+
+  &__titulo {
+    background-image: url(https://media.giphy.com/media/jnVtE5ZBQlL7Z0z7iA/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+    /*  margin: 1em 5em 2em 0em;*/
+    font-size: 9vh;
+
+    /*Media queries titulo*/
+    @include tablet {
+      font-size: 7.5vh;
+    }
+
+    @include movilL {
+      font-size: 5.5vh;
+    }
+
+    @include movilM {
+      font-size: 4.5vh;
+    }
+
+    @include movilS {
+      font-size: 4vh;
+    }
+  }
+
+  &__texto {
+    font-size: 3vh;
+
+    /*Media queries titulo*/
+    @include tablet {
+      font-size: 2.5vh;
+    }
+
+    @include movilL {
+      font-size: 1.5vh;
+    }
+
+    @include movilM {
+      font-size: 1.4vh;
+    }
+
+    @include movilS {
+      font-size: 1.3vh;
+    }
+  }
+
+  &__foto {
+    height: 18vh;
+  }
+}

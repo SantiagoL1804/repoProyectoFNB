@@ -1,0 +1,40 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+/*Componentes y reset*/
+@import "./parciales/componentes";
+
+/*Navbar*/
+@import "./parciales/navbar";
+
+/*Cabeza de index*/
+@import "./parciales/cabeza";
+
+/*Medio de index*/
+@import "./parciales/medio";
+
+/*Noticias de index*/
+@import "./parciales/news";
+
+/*Nosotros de index*/
+@import "./parciales/nosotros";
+
+/*Footer de index*/
+@import "./parciales/footer";
+
+/*Sección plantel*/
+@import "./parciales/plantel";
+
+/*Sección partidos en vivo*/
+@import "./parciales/partVivo";
+
+/*Sección historia*/
+@import "./parciales/historia";
+
+/*Sección contacto*/
+@import "./parciales/contacto";
+
+/*Media queries de toda la página*/
+@import "./parciales/responsive-mixins";
+
+/*Variables*/
+@import "./parciales/variables";

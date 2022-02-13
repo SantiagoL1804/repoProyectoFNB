@@ -1,0 +1,95 @@
+@import "./variables";
+@import "./responsive-mixins";
+
+.historiaMedio {
+  background: linear-gradient(90deg, white, rgb(196, 176, 113));
+
+  &__titulo {
+    @include titulo-animado;
+    margin: 3em 0em;
+  }
+
+  &__fondo {
+    background: map-get($colores-pagina, violeta-fenix);
+    background-size: 100%;
+    border-radius: 3%;
+
+    @include laptop1024 {
+      border-radius: 2%;
+    }
+
+    @include tablet {
+      border-radius: 4%;
+    }
+
+    @include movilL {
+      border-radius: 6%;
+    }
+  }
+
+  &__subtitulo1 {
+    @extend %historia-subtitulos;
+  }
+
+  &__subtitulo2 {
+    @extend %historia-subtitulos;
+  }
+
+  /*&__cuadroFoto {
+    margin: 1em;
+  }*/
+
+  &__imagen {
+    position: relative;
+    height: auto;
+
+    @include tablet {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+    }
+
+    @include movilL {
+      width: 100%;
+    }
+  }
+
+  &__foto {
+    width: inherit;
+    width: 100%;
+  }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(130, 58, 156, 0.6);
+    color: map-get($colores-pagina, dorado-fenix);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    opacity: 0;
+    transition: opacity 0.25s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__descripcion {
+    margin: 0 0 0.5vh 0.5vh;
+  }
+
+  &__subtitulo3 {
+    @extend %historia-subtitulos;
+  }
+
+  &__tituloDatos {
+    color: map-get($colores-pagina, violeta-fenix);
+    text-align: center;
+  }
+}

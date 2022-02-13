@@ -1,0 +1,12 @@
+@import "./variables";
+@import "./responsive-mixins";
+
+.navs {
+  &__vinculos {
+    color: map-get($colores-pagina, blanco-fenix);
+
+    &:hover {
+      color: map-get($colores-pagina, dorado-fenix);
+    }
+  }
+}
